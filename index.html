@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/e243738caa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoficador de texto</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="imagens/Frame 6.png" alt="A-Alura">
+    </header>
+    <main class="conteudo">
+        <section class="conteudo-texto">
+            <textarea class="caixa-texto" name="caixa-texto" id="caixa-texto" placeholder="Digite seu texto"></textarea>
+            <p><i class="fa-solid fa-circle-exclamation" style="color: #495057"></i> Apenas letras minúsculas e sem acento</p>
+            <div class="container-botoes">
+                <button onclick="Criptografar()" id="botao-cripto" class="container-botoes-cripto">Criptografar</button>
+                <button onclick="Descriptografar()" class="container-botoes-descripto">Descriptografar</button>
+            </div>
+        </section>
+        <div id="container-resposta" class="container-resposta">
+            <p id="resposta-conteudo" class="container-resposta-titulo"></p>
+            <div id="imagem-resposta" class="container-resposta-conteudo">
+                <img class="imagem" src="imagens/High quality products 1 1@2x.png" alt="imagem-lupa">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou  descriptografar</p>
+            </div>
+            <button onclick="copiarTexto()" id="copiar-botao" class="container-resposta-botao">Copiar</button>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
